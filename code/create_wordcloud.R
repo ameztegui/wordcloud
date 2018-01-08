@@ -34,6 +34,6 @@ modi_abstracts<-tm_map (modi_abstracts, removeWords,
 
 # Create wordcloud
 
-wordcloud (modi_abstracts, scale=c(5,0.5), max.words=50, 
-           random.order=TRUE, rot.per=0.35, use.r.layout=FALSE, 
-           colors=brewer.pal(8, "Dark2"))
+wordcloud (modi_abstracts,
+           max.words=100, random.order=F, rot.per=0.45, random.color=F,
+           colors=brewer.pal(6, "Dark2"))
